@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/esm/Col';
 import logo from '../pictures/logo.svg';
 import newLogo from '../pictures/circle-user.png'
 import Button from 'react-bootstrap/Button';
+import { PrimaryButton } from '../components/Button';
 import { useEffect, useState } from 'react';
 
 const HomePage = () => {
@@ -24,7 +25,7 @@ const HomePage = () => {
         <div className="App">
         <header className="App-header">
             <Container>
-                <Row >
+                <Row>
                     <Col md={6} className='d-flex align-items-center justify-content-center'>
                         <img src={newLogo} className="App-logo" alt="logo" />
                     </Col>
@@ -34,8 +35,9 @@ const HomePage = () => {
                             <p className='text-start'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis elit sit amet pretium commodo. Etiam ac scelerisque quam. Praesent ac odio erat. Phasellus quis ornare metus. Vivamus rhoncus tellus eu mi volutpat, nec convallis dolor porta.
                             </p>
-                            <Button variant="primary" size="lg"><b>Sign In</b></Button>{' '}
-                            <Button variant="secondary" size="lg"><b>Sign Up</b></Button>
+                            <PrimaryButton />
+                            {/* <Button variant="primary" href="/Login" size="lg"><b>Sign In</b></Button>{' '}
+                            <Button variant="secondary" href="/Registration" size="lg"><b>Sign Up</b></Button> */}
                         </div>
                     </Col>
                 </Row>

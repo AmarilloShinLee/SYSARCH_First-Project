@@ -9,9 +9,9 @@ function BasicExample() {
     <Container>
         <Row className="d-flex justify-content-center">
             <Col sm="8" className="border rounded bg-container" style={{margin: "6em", padding: "4em"}}>
-                <Form>
+                <Form >
 
-                    <Form.Group>
+                    <Form.Group >
                     <Form.Label className="d-flex justify-content-center">
                         <h2>Registration</h2>
                     </Form.Label>
