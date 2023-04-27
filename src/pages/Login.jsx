@@ -3,12 +3,13 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
+import '../NewStyle.css'
 
 function BasicExample() {
   return (
-    <Container>
+    <Container className="">
         <Row className="d-flex justify-content-center">
-            <Col sm="6" className="border rounded" style={{margin: "12em", padding: "4em"}}>
+            <Col xl="6" className="border rounded bg-container">
                 <Form>
                     <Form.Group>
                         <Form.Label className="d-flex justify-content-center">
@@ -30,9 +31,14 @@ function BasicExample() {
                         <Form.Check type="checkbox" label="Remember me" />
                     </Form.Group>
 
-                    <Button variant="primary" type="submit">
-                        Submit
-                    </Button>
+                    <Row>
+                        <Col>
+                        <Button variant="primary" type="submit">
+                            Submit
+                        </Button>
+                        </Col>
+                    </Row>
+
                 </Form>
             </Col>
         </Row>

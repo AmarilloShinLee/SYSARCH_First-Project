@@ -1,26 +1,41 @@
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
-import logo from '../logo.svg';
+import logo from '../pictures/logo.svg';
+import newLogo from '../pictures/circle-user.png'
 import Button from 'react-bootstrap/Button';
+import { useEffect, useState } from 'react';
 
 const HomePage = () => {
+    let title = "Welcome to the Internet!";
+
+    // UseState and UseEffect
+    // const [count, setCount] = useState(0);
+    
+    // const addCount = () => {
+    //     setCount(count + 1);
+    // };
+
+    // useEffect(() => {
+    //     document.title = `You pressed 'Sign Up' ${count} times`;
+    // }, [addCount]);
+
     return (
         <div className="App">
         <header className="App-header">
             <Container>
-                <Row>
-                    <Col className='d-flex align-items-center justify-content-center'>
-                        <img src={logo} className="App-logo" alt="logo" />
+                <Row >
+                    <Col md={6} className='d-flex align-items-center justify-content-center'>
+                        <img src={newLogo} className="App-logo" alt="logo" />
                     </Col>
-                    <Col className='d-flex align-items-center justify-content-center'>
+                    <Col md={6} className='d-flex align-items-center justify-content-center'>
                         <div>
-                            <h2>Welcome to the Internet!</h2>
+                        <h2>{title}</h2>
                             <p className='text-start'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis elit sit amet pretium commodo. Etiam ac scelerisque quam. Praesent ac odio erat. Phasellus quis ornare metus. Vivamus rhoncus tellus eu mi volutpat, nec convallis dolor porta.
                             </p>
-                            <Button href="/Login" variant="primary" size="lg"><b>Sign In</b></Button>{' '}
-                            <Button href="/Registration" variant="secondary" size="lg"><b>Sign Up</b></Button>
+                            <Button variant="primary" onClick={addCount} size="lg"><b>Sign In</b></Button>{' '}
+                            <Button variant="secondary" size="lg"><b>Sign Up</b></Button>
                         </div>
                     </Col>
                 </Row>

@@ -10,6 +10,11 @@ const NavBar = () => {
         <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
+          
+          <Navbar.Text>
+            Hello World!
+          </Navbar.Text>
+
           <Nav>
             <Nav.Link href="/Login">Login</Nav.Link>
             <Nav.Link href="/Registration">Registration</Nav.Link>

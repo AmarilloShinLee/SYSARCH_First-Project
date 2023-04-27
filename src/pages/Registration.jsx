@@ -8,8 +8,9 @@ function BasicExample() {
   return (
     <Container>
         <Row className="d-flex justify-content-center">
-            <Col sm="6" className="border rounded" style={{margin: "6em", padding: "4em"}}>
+            <Col sm="6" className="border rounded bg-container" style={{margin: "6em", padding: "4em"}}>
                 <Form>
+                    
                     <Form.Group>
                         <Form.Label className="d-flex justify-content-center">
                             <h2>Registration</h2>
