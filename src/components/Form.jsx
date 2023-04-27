@@ -14,10 +14,10 @@ const LoginComponent = () => {
     ]
 
     function setValue(e, element) {
-        if (element.label == "Username")
+        if (element.label === "Username")
             setUsername(e.target.value)
 
-        if (element.label == "Password")
+        if (element.label === "Password")
             setPassword(e.target.value)
     }
 
