@@ -34,7 +34,7 @@ const HomePage = () => {
                             <p className='text-start'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam venenatis elit sit amet pretium commodo. Etiam ac scelerisque quam. Praesent ac odio erat. Phasellus quis ornare metus. Vivamus rhoncus tellus eu mi volutpat, nec convallis dolor porta.
                             </p>
-                            <Button variant="primary" onClick={addCount} size="lg"><b>Sign In</b></Button>{' '}
+                            <Button variant="primary" size="lg"><b>Sign In</b></Button>{' '}
                             <Button variant="secondary" size="lg"><b>Sign Up</b></Button>
                         </div>
                     </Col>
